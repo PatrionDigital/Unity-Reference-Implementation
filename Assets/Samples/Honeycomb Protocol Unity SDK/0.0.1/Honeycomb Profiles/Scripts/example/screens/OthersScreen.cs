@@ -1556,7 +1556,7 @@ namespace Solana.Unity.SDK.Example
        public async void CreateUnCompressedResource()
        {
 
-        //TODO: Update In Docs
+       
         var createNewResourceTransaction = await StateManager.Instance.Client.CreateCreateNewResourceTransaction(new CreateCreateNewResourceTransactionParams
         {
             Project = projectAddress,
@@ -1597,7 +1597,6 @@ namespace Solana.Unity.SDK.Example
     public async void CreateCompressedResource()
     {
 
-        //TODO Update in Docs
 
         var createNewResourceTransaction = await StateManager.Instance.Client.CreateCreateNewResourceTransaction(new CreateCreateNewResourceTransactionParams
         {
@@ -1722,8 +1721,6 @@ namespace Solana.Unity.SDK.Example
         {
             CreateCompressedResource();
         }
-
-        //TODO: Update In Docs
 
         var createBurnResourceTransaction = await StateManager.Instance.Client.CreateBurnResourceTransaction(new CreateBurnResourceTransactionParams
         {
@@ -2078,7 +2075,7 @@ namespace Solana.Unity.SDK.Example
                 return;
             }
 
-            //TODO: ADD TO DOCS
+           
             try{
                     var createMissionPoolParams = new CreateCreateMissionPoolTransactionParams
         {
