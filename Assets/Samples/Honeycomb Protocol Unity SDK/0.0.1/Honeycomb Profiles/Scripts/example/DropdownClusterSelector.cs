@@ -32,7 +32,7 @@ public class DropdownClusterSelector : MonoBehaviour
         StateManager.Instance.Client = value switch
         {
             (int)RpcCluster.MainNet => new("https://edge.main.honeycombprotocol.com"),
-            _ => new("http://localhost:4000"),
+            _ => new("https://edge.test.honeycombprotocol.com"),
         };
         PlayerPrefs.SetInt("rpcCluster", value);
         PlayerPrefs.Save();
